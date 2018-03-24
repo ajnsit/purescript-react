@@ -154,7 +154,7 @@ type Render eff =
     ( props :: ReactProps
     , state :: ReactState ReadOnly
     | eff
-    ) ReactElement
+    ) (Array ReactElement)
 
 -- | A component will mount function.
 type ComponentWillMount eff =
